@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Kaca Mata</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Toko Kaca Mata</h1>
+        <div class="cart">
+            <span>Keranjang: <span id="cart-count">0</span> item</span>
+        </div>
+    </header>
+    <div>
+        <h1 class="selamat">selamat datang di toko yeti shop</h1>
+    </div>
+    <main>
+        <section class="products">
+            <div class="product">
+                <h2>Kaca Mata 1</h2>
+                <img src="Kaca Mata Fashions.jpeg" alt="Produk 1">
+                <p>Harga: Rp 10.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <h2>Kaca Mata 2</h2>
+                <img src="Kaca Mata Laki-Laki.jpeg" alt="produk 2">
+                <p>Harga: Rp 12.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+            </div>
+            <div class="product">
+                <h2>Kaca Mata 3</h2>
+                <img src="gold kaca mata.jpeg" alt="produk 3">
+                <p>Harga: Rp 15.000</p>
+                <button onclick="addToCart()">Tambah ke Keranjang</button>
+            </div>
+        </section>
+    </main>
+    <div>
+        <h1>Lokasi Saya di Google Maps</h1>
+        <<iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.234992561554!2d106.62436631527446!3d-6.124083895484649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42b0b34fe478d5%3A0x6be56e478702fc99!2sSindang%20Jaya%2C%20Tangerang%2C%20Banten!5e0!3m2!1sen!2sid!4v1605765263934!5m2!1sen!2sid" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(images.jpeg);
+
+}
+
+header {
+    background: hsl(78, 100%, 50%);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.cart {
+    margin-top: 10px;
+}
+.selamat{
+    text-align: center;
+    color: white;
+}
+main {
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product h2 {
+    font-size: 1.5em;
+}
+
+.product button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover {
+    background: #218838;
+}
